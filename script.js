@@ -1,5 +1,7 @@
 const apiKey = 'b82f0b66a1cbcedcfba57f7ad9d45096';
 
+const city = 'Salt lake city'; // Замените на ваш город
+
 const getWeatherForecast = async (city) => {
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
     try {
