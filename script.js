@@ -35,7 +35,7 @@ const assistant = async (question) => {
         const regex = new RegExp(questionPattern, 'i');
         if (regex.test(question)) {
             if (questionPattern === 'какая погода?') {
-                const city = 'Moscow'; // Замените на ваш город
+                const city = 'Salt lake city'; // Замените на ваш город
                 return await getWeatherForecast(city);
             }
             return responses[questionPattern];
