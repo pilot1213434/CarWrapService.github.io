@@ -714,6 +714,18 @@ html {
     color: white;
 }
 
+.bottom {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to right, black 5%, blue);
+}
+
+.bottom2 {
+    width: 100%;
+    height: 90px;
+    background-color: black;
+}
+
 @media screen and (max-width: 1200px) {
 .block1art2 {
     display: none;
