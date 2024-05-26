@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to right, black 5%, #0038FF);
+    background: linear-gradient(to right, black 5%, #757575);
     margin: 0;
 }
 
@@ -113,7 +113,7 @@ html {
 .menu {
     display: none;
     position: relative;
-    color: turquoise;
+    color: white;
     font-size: 20px;
     font-family: sans-serif;
     cursor: pointer;
@@ -124,7 +124,7 @@ html {
 
 .menuPc {
     position: relative;
-    color: turquoise;
+    color: #CCCCCC;
     font-size: 20px;
     font-family: sans-serif;
     cursor: pointer;
@@ -135,7 +135,7 @@ html {
 
 .contact {
     position: relative;
-    color: white;
+    color: black;
     font-size: 20px;
     font-family: sans-serif;
     cursor: pointer;
@@ -146,7 +146,7 @@ html {
 
 .Service {
     position: relative;
-    color: white;
+    color: black;
     font-size: 20px;
     font-family: sans-serif;
     cursor: pointer;
@@ -155,7 +155,7 @@ html {
 }
 
 .Service:hover, .contact:hover {
-    color: turquoise;
+    color: #CCCCCC;
 }
 
 .block1 {
@@ -163,7 +163,7 @@ html {
     justify-content: space-between;
     width: 85%;
     height: 800px;
-    background-color: #3462FA;
+    background-color: #CCCCCC;
 }
 
 .block1film {
@@ -177,7 +177,7 @@ html {
     font-size: 72px;
     margin-top: 230px;
     margin-bottom: 0;
-    color: white;
+    color: black;
     font-family: "Barlow", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -185,8 +185,12 @@ html {
 
 .description {
     font-size: 20px;
-    color: white;
+    color: black;
     font-family: Arial;
+    width: 150px;
+    text-align: center;
+    border-radius: 180px;
+    background-position: center;
 }
 
 .button1 {
@@ -194,29 +198,43 @@ html {
     justify-content: center;
     cursor: pointer;
     align-items: center;
-    color: #3462FA;
+    color: white;
     text-decoration: none;
     font-family: Arial;
     width: 150px;
     height: 50px;
     margin-top: 100px;
-    background-color: white;
+    background-color: #757575;
     border-radius: 50px;
-    border: 1px solid white;
+    border: 1px solid #757575;
     transition: 0.2s ease;
 }
 
 .button1:hover {
     background: none;
-    color: white;
+    color: #757575;
+}
+
+.block1logo {
+    position: absolute;
+     width: 150px;
+     border-radius: 180px;
+     margin-left: 15px;
+     margin-top: 10px;
+}
+
+.supportlogo {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
 }
 
 .carwrap {
     position: relative;
     font-family: "Barlow", sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     font-style: normal;
-    color: white;
+    color: black;
     font-size: 20px;
     cursor: pointer;
     z-index: 4;
@@ -229,7 +247,8 @@ html {
 }
 
 .figure {
-    height: 50px;
+    height: 20px;
+    margin-left: 10px;
 }
 
 .logo {
@@ -469,7 +488,7 @@ html {
     height: 10%;
     max-height: 80px;
     min-height: 30px;
-    background-color: black;
+    background-color: #F2F2F2;
     z-index: 3;
 }
 
@@ -717,13 +736,19 @@ html {
 .bottom {
     width: 100%;
     height: 50px;
-    background: linear-gradient(to right, black 5%, #0038FF);
+    background: linear-gradient(to right, black 5%, #757575);
 }
 
 .bottom2 {
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 90px;
-    background-color: black;
+    color: black;
+    font-family: "Barlow";
+    font-size: 30px;
+    font-weight: 600;
+    background-color: #F2F2F2;
 }
 
 @media screen and (max-width: 1200px) {
@@ -851,3 +876,69 @@ html {
     display: block;
     }
   }
+
+@media screen and (max-width: 650px) {
+.SEF {
+    font-size: 50px;
+    }
+  }
+
+@media screen and (max-width: 380px) {
+.SEF {
+    font-size: 35px;
+    }
+  }
+
+@media screen and (max-width: 1428px) {
+.SEF {
+    font-size: 42px;
+    }
+  }
+
+@media screen and (max-width: 1428px) {
+.supportlogo{
+    justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .supportlogo{
+        justify-content: flex-start;
+        }
+      }
+
+@media screen and (max-width: 650px) {
+    .supportlogo{
+        justify-content: center;
+        }
+      }
+
+@media screen and (max-width: 1621px) {
+    .supportlogo{
+        justify-content: center;
+        }
+      }
+
+@media screen and (max-width: 1621px) {
+    .block1logo{
+         margin-left: 0;
+        }
+      }
+
+@media screen and (max-width: 650px) {
+    .block1logo{
+         margin-left: 0;
+        }
+      }
+
+@media screen and (min-width: 1200px) {
+    .block1logo{
+         margin-left: 15px;
+        }
+      }
+
+@media screen and (max-width: 1428px) {
+    .block1logo{
+         margin-left: 0;
+        }
+      }
