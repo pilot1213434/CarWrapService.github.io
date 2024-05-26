@@ -1,0 +1,841 @@
+body {
+    background: linear-gradient(to right, black 5%, #0038FF);
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.top {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    font-family: "Robot";
+    margin-top: 50px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: "Robot";
+    src: url(Roboto-Bold.ttf);
+}
+
+.catalog {
+    display: flex;
+    display: none;
+    justify-content: space-between;
+    margin-top: 100px;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    border: 5px solid greenyellow;
+    border-radius: 20px;
+}
+
+.armygreen {
+    width: 500px;
+    height: 350px;
+}
+
+.GlossNardoGray {
+    width: auto;
+    height: 350px;
+    margin-left: 20px;
+}
+
+.MatteBlack {
+    width: auto;
+    height: 350px;
+    margin-left: 20px;
+}
+
+.GlossBubblegumPink {
+    width: auto;
+    height: 350px;
+    margin-left: 20px;
+}
+
+.catalog::-webkit-scrollbar {
+    border-radius: 40px;
+    background-color: rgb(54, 54, 54);
+    height: 20px;
+    margin-top: 30px;
+}
+
+.catalog::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 20px;
+    margin-top: 30px;
+    border: 4px solid rgb(54, 54, 54);
+    cursor: pointer;
+}
+
+.GlossFlipDeepSpace{
+    width: auto;
+    height: 350px;
+    margin-left: 20px;
+}
+
+.GlossBlackMetallic {
+    width: auto;
+    height: 350px;
+    margin-left: 20px;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.FlashSolar {
+    width: auto;
+    height: 350px;
+    margin-left: 20px;
+}
+
+.catalogcar {
+    display: none;
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    top: 90px;
+    font-family: "Robot";
+    cursor: default;
+}
+
+.menu {
+    display: none;
+    position: relative;
+    color: turquoise;
+    font-size: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+    z-index: 4;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.menuPc {
+    position: relative;
+    color: turquoise;
+    font-size: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+    z-index: 4;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.contact {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+    z-index: 4;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.Service {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+    z-index: 4;
+    text-align: center;
+}
+
+.Service:hover, .contact:hover {
+    color: turquoise;
+}
+
+.block1 {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    height: 800px;
+    background-color: #3462FA;
+}
+
+.block1film {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.SEF {
+    font-size: 72px;
+    margin-top: 230px;
+    margin-bottom: 0;
+    color: white;
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.description {
+    font-size: 20px;
+    color: white;
+    font-family: Arial;
+}
+
+.button1 {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    color: #3462FA;
+    text-decoration: none;
+    font-family: Arial;
+    width: 150px;
+    height: 50px;
+    margin-top: 100px;
+    background-color: white;
+    border-radius: 50px;
+    border: 1px solid white;
+    transition: 0.2s ease;
+}
+
+.button1:hover {
+    background: none;
+    color: white;
+}
+
+.carwrap {
+    position: relative;
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 4;
+    text-align: center;
+}
+
+.component {
+    display: flex;
+    margin-right: 90px;
+}
+
+.figure {
+    height: 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 90px;
+}
+
+.block1art {
+    display: flex;
+
+}
+
+.block2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.block2SYF {
+    color: white;
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 100px;
+    font-size: 56px;
+}
+
+.block2TE {
+    color: white;
+    font-size: 18px;
+    font-family: Arial;
+}
+
+.block2film {
+    display: flex;
+    justify-content: center;
+}
+
+.block2KPMF {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 20px;
+    text-decoration: none;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 55px;
+    color: black;
+    background-image: url(https://static.wixstatic.com/media/6d257e_8efdf16835c740beac0c04afe5fad904~mv2.jpg/v1/fill/w_243,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/pngtree-d-rendering-of-a-race-car-viewed.jpg);
+    width: 243px;
+    height: 400px;
+    transition: 0.3s ease;
+}
+
+.block2M3 {
+    display: flex;
+    justify-content: center;
+    background-image: url(https://static.wixstatic.com/media/6d257e_90174b27071c4e2c81324af3f53e1721~mv2.jpg/v1/fill/w_209,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/pngtree-d-rendering-of-a-race-car-viewed-from-the-side-on-image_3730071.jpg);
+    width: 209px;
+    height: 400px;
+    color: black;
+    text-decoration: none;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 55px;
+    transition: 0.3s ease;
+}
+
+.block2AVERY {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 20px;
+    background-image: url(https://static.wixstatic.com/media/6d257e_f5e3bc2a2df14e77bf667e31b37fdc96~mv2.jpg/v1/fill/w_243,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/pngtree-d-rendering-of-a-race-car-viewed.jpg);
+    width: 243px;
+    height: 400px;
+    color: black;
+    text-decoration: none;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 55px;
+    transition: 0.3s ease;
+}
+
+.block2KPMF:hover {
+    transform: scale(1.1);
+}
+
+.block2M3:hover {
+    transform: scale(1.1);
+}
+
+.block2AVERY:hover {
+    transform: scale(1.1);
+}
+
+.block3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.block3ABOUT {
+    display: flex;
+    font-size: 72px;
+    flex-direction: column;
+    color: white;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-left: 100px;
+    margin-top: 53px;
+}
+
+.block3art {
+    background-image: url(https://static.wixstatic.com/media/11062b_5628ff0aa71b4751bf7d5790b59d76c4~mv2.jpeg/v1/fill/w_467,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/BG.jpeg);
+    border-radius: 180px;
+    width: 467px;
+    height: 342px;
+    margin-top: 20px;
+}
+
+.block3description {
+    width: 80%;
+    font-size: 16px;
+}
+
+.block3art2 {
+    height: 520px;
+    margin-right: 100px;
+}
+
+.boxone {
+    opacity: 0;
+    position: fixed;
+    width: 30%;
+    height: 80%;
+    background-color: rgb(255, 166, 0);
+    z-index: 1;
+    margin-top: 5%;
+    margin-right: 50%;
+    border-radius: 30px;
+}
+
+.allbox {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    height: 100%;
+}
+
+.back {
+    opacity: 0;
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    margin-top: 5%;
+    margin-right: 70%;
+    font-family: "Robot";
+    z-index: 2;
+}
+
+.wrap {
+    outline: 0;
+    font-size: 30px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    font-family: "Robot";
+    border: 5px solid black;
+    background-color: white;
+    cursor: pointer;
+    color: black;
+}
+
+.type {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    opacity: 1;
+    width: 90%;
+    height: 300px;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+
+.none {
+    position: absolute;
+    width: auto;
+    font-size: 220%;
+    font-family: "Robot";
+    text-align: center;
+    margin-bottom: 250px;
+}
+
+.one {
+    width: auto;
+    font-size: 220%;
+    font-family: "Robot";
+    text-align: center;
+}
+
+#none[data-color="grey"] {
+    color: grey;
+}
+
+.none[data-color="green"] {
+    color: greenyellow;
+}
+
+#none[data-color="Black"] {
+    color: black;
+}
+
+.two {
+    opacity: 0;
+}
+
+.one {
+    color: greenyellow;
+    margin-bottom: 100px;
+}
+
+.HomePanel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    max-height: 80px;
+    min-height: 30px;
+    background-color: black;
+    z-index: 3;
+}
+
+.PsevdoPanel {
+    width: 100%;
+    height: 72px;
+}
+
+.txttype {
+    font-size: 30px;
+    font-family: "Robot";
+    color: white;
+}
+
+.panelfilm {
+    position: fixed;
+    color: white;
+    font-size: 40px;
+    margin-top: 90px;
+    margin-left: 200px;
+    font-family: "Robot";
+    cursor: pointer;
+    z-index: 4;
+} 
+
+.panelfilm:hover {
+    border-bottom: 2px solid white;
+}
+
+.boxwrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    border-radius: 20px;
+    width: 95%;
+    height: 500px;
+    background-color: black;
+    flex-direction: column;
+}
+
+.none[data-color="black"] {
+    color: black;
+}
+
+.infoFilm {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 100px;
+    border: 5px solid black;
+    height: 900px;
+    border-radius: 20px;
+    width: 90%;
+    background-color: black;
+}
+
+.firstinfo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    height: 400px;
+    background-color: white;
+    border-radius: 60px;
+    border: 5px solid black;
+    z-index: 1;
+}
+
+.intofilmtwo {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    height: 330px;
+    overflow-y: scroll;
+    background-color: white;
+    border-radius: 10px;
+    border: 5px solid black;
+    font-size: 30px;
+    text-align: left;
+    font-family: "Robot";
+    z-index: 2;
+}
+
+.fact1 {
+    position: absolute;
+    margin-right: 45%;
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: "Robot";
+    z-index: 2;
+}
+
+.infact2 {
+    font-size: 30px;
+}
+
+.intofilmtwo::-webkit-scrollbar {
+    border-radius: 40px;
+    background-color: grey;
+}
+
+.intofilmtwo::-webkit-scrollbar-thumb {
+    border-radius: 40px;
+    background-color: rgb(210, 202, 202);
+}
+
+.fact2 {
+    position: absolute;
+    margin-left: 45%;
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: "Robot";
+    z-index: 2;
+}
+
+.boxfactone {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.boxfacttwo {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.factthree {
+    position: absolute;
+    margin-right: 50%;
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: "Robot";
+    z-index: 2;
+}
+
+.namefact {
+    font-size: 50px;
+    font-family: "Robot";
+    text-align: center;
+    color: white;
+}
+
+.la {
+    position: fixed;
+    z-index: 4;
+    width: 7%;
+    height: auto;
+    margin-top: 5px;
+}
+
+.firstimage {
+    width: 90%;
+    border: 5px solid black;
+    height: auto;
+}
+
+.boxforlogo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.namecompany {
+    position: absolute;
+    font-family: "Robot";
+    z-index: 2;
+    font-size: 600%;
+    bottom: 0;
+    color: whitesmoke;
+}
+
+.namecompanyBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.infoFilmcenter {
+    display: flex;
+    justify-content: center;
+}
+
+.okk {
+    display: none;
+    position: fixed;
+    font-size: 15px;
+    z-index: 5;
+    color: white;
+    margin-top: 30px;
+    margin-left: 40px;
+    width: 50px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+#selectmenu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 5;
+    display: none;
+}
+
+.menuback {
+    font-size: 30px;
+    text-align: center;
+    font-family: "Barlow";
+    font-weight: 600;
+    font-size: 40px;
+    color: white;
+}
+
+.menuphone {
+    font-size: 30px;
+    align-self: center;
+    font-family: "Barlow";
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 40px;
+    color: white;
+}
+
+.componentmenuphone {
+    display: flex;
+    justify-content: center;
+}
+
+.logoinmenu {
+    font-size: 30px;
+    text-align: center;
+    font-family: "Barlow";
+    font-weight: 600;
+    font-size: 40px;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+@media screen and (max-width: 1200px) {
+.block1art2 {
+    display: none;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .block2film {
+        flex-direction: column;
+        align-items: center;
+        }
+      }
+
+@media screen and (max-width: 1200px) {
+    .block2KPMF, .block2M3, .block2AVERY {
+        right: 0;
+        left: 0;
+        }
+      }
+
+@media screen and (max-width: 1200px) {
+    .block3art2{
+        display: none;
+        }
+      }
+
+@media screen and (max-width: 1200px) {
+    .block3 {
+        justify-content: center;
+        }
+      }
+      
+@media screen and (max-width: 706px) {
+    .block3art {
+        width: 297px;
+        }
+      }
+
+@media screen and (max-width: 460px) {
+    .block3ABOUT {
+        margin-left: 10px;
+        }
+      }
+
+@media screen and (max-width: 432px) {
+    .block3art {
+        width: 237px;
+        }
+      }
+
+@media screen and (max-width: 500px) {
+    .block1 {
+        height: 580px;
+        }
+      }
+
+@media screen and (max-width: 500px) {
+    .SEF {
+        font-size: 42px;
+        }
+      }
+
+@media screen and (max-width: 500px) {
+    .block2SYF {
+        font-size: 35px;
+        }
+      }
+
+@media screen and (max-width: 450px) {
+    .block1 {
+         width: 100%;
+        }
+      }
+
+@media screen and (max-width: 1200px) {
+    .block2M3, .block2AVERY {
+         margin-top: 30px;
+        }
+      }
+
+@media screen and (max-width: 1200px) {
+    .block2KPMF {
+         background-image: url(https://img.freepik.com/premium-photo/photo-purple-sports-car-white-background_822108-6004.jpg);
+         background-position-x: -20px;
+         background-position-y: -60px;
+        }
+      }
+
+@media screen and (max-width: 1200px) {
+    .block2M3 {
+         background-image: url(https://img.freepik.com/premium-photo/close-up-white-sports-car-white-background-generative-ai_902049-42845.jpg?w=740);
+         background-position-x: -20px;
+         background-position-y: 20px;
+         background-size: auto 500px;
+         width: 243px;
+        }
+      }
+
+      @media screen and (max-width: 1200px) {
+        .block2AVERY {
+             background-image: url(https://img.freepik.com/premium-photo/new-modern-stylish-car-illustration_1000714-489.jpg?w=740);
+             background-position-x: -20px;
+             background-position-y: 100px;
+             background-size: auto 400px;
+             width: 243px;
+            }
+          }
+
+          @media screen and (max-width: 1200px) {
+            .component {
+                 display: none;
+                }
+              }
+
+@media screen and (max-width: 1200px) {
+            .logo {
+                 margin-left: 0;
+                }
+              }
+
+@media screen and (max-width: 1200px) {
+.menu {
+    display: block;
+    }
+  }
