@@ -717,7 +717,7 @@ html {
 .bottom {
     width: 100%;
     height: 50px;
-    background: linear-gradient(to right, black 5%, blue);
+    background: linear-gradient(to right, black 5%, #0038FF);
 }
 
 .bottom2 {
