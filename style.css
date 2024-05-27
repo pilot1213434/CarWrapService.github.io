@@ -1094,3 +1094,9 @@ html {
             color: white;
             }
           }
+
+@media screen and (max-width: 500px) {
+        .SEF{
+             margin-top: 200px;
+            }
+          }
