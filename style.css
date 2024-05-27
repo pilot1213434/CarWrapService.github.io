@@ -174,7 +174,7 @@ html {
 }
 
 .SEF {
-    font-size: 72px;
+    font-size: 62px;
     margin-top: 230px;
     margin-bottom: 0;
     color: black;
@@ -742,13 +742,71 @@ html {
 .bottom2 {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
-    height: 90px;
+    height: 100%;
     color: black;
     font-family: "Barlow";
     font-size: 30px;
     font-weight: 600;
     background-color: #F2F2F2;
+}
+
+.numberphone {
+    margin-right: 50px;
+    font-size: 23px;
+}
+
+.email {
+    margin-bottom: 10px;
+    font-size: 23px;
+}
+
+.Instagram {
+    text-decoration: none;
+    margin-left: 50px;
+    font-size: 23px;
+    color: black;
+}
+
+.facebook {
+    text-decoration: none;
+    margin-left: 50px;
+    font-size: 23px;
+    color: black;
+}
+
+.iconemail {
+    position: relative;
+    top: 3px;
+    right: 5px;
+}
+
+.iconphone {
+    position: relative;
+    top: 5px;
+    right: 5px;
+}
+
+.iconinstagram {
+    position: relative;
+    top: 5px;
+    right: 5px;
+}
+
+.contactlist {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.facebookicon {
+    position: relative;
+    top: 2px;
+    right: 5px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -809,7 +867,7 @@ html {
 
 @media screen and (max-width: 500px) {
     .SEF {
-        font-size: 42px;
+        font-size: 32px;
         }
       }
 
@@ -879,13 +937,13 @@ html {
 
 @media screen and (max-width: 650px) {
 .SEF {
-    font-size: 50px;
+    font-size: 40px;
     }
   }
 
 @media screen and (max-width: 380px) {
 .SEF {
-    font-size: 35px;
+    font-size: 25px;
     }
   }
 
@@ -942,3 +1000,41 @@ html {
          margin-left: 0;
         }
       }
+
+@media screen and (max-width: 400px) {
+    .SEF{
+         font-size: 32px;
+        }
+      }
+
+@media screen and (max-width: 1030px) {
+    .contactlist{
+         flex-direction: column;
+         align-items: center;
+        }
+      }
+
+@media screen and (max-width: 1030px) {
+    .numberphone, .email, .Instagram, .facebook{
+         margin-right: 0;
+         margin-left: 0;
+        }
+      }
+
+      @media screen and (max-width: 1030px) {
+        .email, .Instagram, .facebook{
+             margin-top: 20px;
+            }
+          }
+
+@media screen and (max-width: 310px) {
+        .email{
+             font-size: 20px;
+            }
+          }
+
+@media screen and (max-width: 1238px) {
+        .SEF{
+             font-size: 35px;
+            }
+          }
