@@ -768,6 +768,7 @@ html {
     margin-left: 50px;
     font-size: 23px;
     color: black;
+    border-bottom: 1px solid black;
 }
 
 .facebook {
@@ -775,6 +776,7 @@ html {
     margin-left: 50px;
     font-size: 23px;
     color: black;
+    border-bottom: 1px solid black;
 }
 
 .iconemail {
@@ -1036,5 +1038,59 @@ html {
 @media screen and (max-width: 1238px) {
         .SEF{
              font-size: 35px;
+            }
+          }
+
+@media screen and (max-width: 1200px) {
+        .block1{
+             background-image: url(mashin-na-belom-fone-1440x900px.jpg);
+            }
+          }
+
+@media screen and (max-width: 1154px) {
+        .block1{
+             background-position-x: -80px;
+            }
+          }
+
+@media screen and (max-width: 1068px) {
+        .block1{
+             background-position-x: -30px;
+             background-position-y: 10px;
+             background-size: auto 820px;
+            }
+          }
+
+@media screen and (max-width: 1016px) {
+        .block1{
+             background-image: url(http://wallpapers-image.ru/2560x1600/cars/wallpapers/wallpapers-cars-025.jpg);
+             background-position: center;
+             background-size: auto 800px;
+            }
+          }
+
+@media screen and (max-width: 640px) {
+        .block1{
+             background-position-x: -550px;
+            }
+          }
+
+@media screen and (max-width: 500px) {
+        .block1{
+             background-position-x: -370px;
+             background-size: auto 600px;
+            }
+          }
+
+@media screen and (max-width: 480px) {
+        .block1{
+             background-position-x: -410px;
+            }
+          }
+
+@media screen and (max-width: 1016px) {
+        .SEF, .description{
+
+            color: white;
             }
           }
