@@ -997,12 +997,6 @@ html {
         }
       }
 
-@media screen and (max-width: 1428px) {
-    .block1logo{
-         margin-left: 0;
-        }
-      }
-
 @media screen and (max-width: 400px) {
     .SEF{
          font-size: 32px;
