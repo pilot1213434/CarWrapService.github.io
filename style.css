@@ -225,7 +225,7 @@ html {
 
 .supportlogo {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     width: 100%;
 }
 
@@ -288,44 +288,131 @@ html {
     justify-content: center;
 }
 
-.block2KPMF {
+.block2f {
     display: flex;
     justify-content: center;
     position: relative;
-    right: 20px;
+    margin-right: 20px;
     text-decoration: none;
     font-family: "Barlow", sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 40px;
     color: black;
-    background-image: url(https://static.wixstatic.com/media/6d257e_8efdf16835c740beac0c04afe5fad904~mv2.jpg/v1/fill/w_243,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/pngtree-d-rendering-of-a-race-car-viewed.jpg);
+    background-image: url(https://img.freepik.com/premium-vector/auto-vehicle-vector-car-sport-speed-illustration-automobile-transport-race-design-motor_1013341-9363.jpg?w=740);
     width: 243px;
     height: 400px;
     transition: 0.3s ease;
+    background-position-x: -30px;
+    background-position-y: -85px;
+    background-size: auto 600px;
+}
+
+.block2ino {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-right: 20px;
+    text-decoration: none;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+    color: black;
+    background-image: url(https://img.freepik.com/premium-photo/gold-car-is-gold-color_662214-109212.jpg?w=996);
+    width: 243px;
+    height: 400px;
+    transition: 0.3s ease;
+    background-position-x: -10px;
+    background-position-y: 45px;
+    background-size: auto 320px;
+}
+
+.block2Frog{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-right: 20px;
+    text-decoration: none;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+    color: black;
+    background-image: url(https://img.freepik.com/premium-photo/this-is-sleek-stylish-orange-sports-car-it-has-futuristic-design-looks-like-it-could-go-very-fast_14117-316944.jpg?w=1380);
+    width: 243px;
+    height: 400px;
+    transition: 0.3s ease;
+    background-position-x: -30px;
+    background-position-y: 65px;
+    background-size: auto 320px;
+    background-color: white;
+}
+
+.block2Aluko {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-right: 20px;
+    text-decoration: none;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+    color: black;
+    background-image: url(https://img.freepik.com/premium-vector/sport-car-ilustration-vector-art_791234-5456.jpg?w=740);
+    width: 243px;
+    height: 400px;
+    transition: 0.3s ease;
+    background-position-x: 0px;
+    background-position-y: 40px;
+    background-size: auto 370px;
+}
+
+.block2KPMF {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-right: 20px;
+    text-decoration: none;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+    color: black;
+    background-image: url(https://img.freepik.com/premium-photo/photo-purple-sports-car-white-background_822108-6004.jpg);
+    width: 243px;
+    height: 400px;
+    transition: 0.3s ease;
+    background-position-x: 20px;
+    background-position-y: 20px;
+    background-size: auto 400px;
 }
 
 .block2M3 {
     display: flex;
     justify-content: center;
-    background-image: url(https://static.wixstatic.com/media/6d257e_90174b27071c4e2c81324af3f53e1721~mv2.jpg/v1/fill/w_209,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/pngtree-d-rendering-of-a-race-car-viewed-from-the-side-on-image_3730071.jpg);
-    width: 209px;
+    background-image: url(https://img.freepik.com/premium-photo/close-up-white-sports-car-white-background-generative-ai_902049-42845.jpg?w=740);
+    width: 243px;
     height: 400px;
     color: black;
     text-decoration: none;
     font-family: "Barlow", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 55px;
+    font-size: 40px;
     transition: 0.3s ease;
+    background-position-x: -20px;
+     background-position-y: 20px;
+     background-size: auto 400px;
 }
 
 .block2AVERY {
     display: flex;
     justify-content: center;
     position: relative;
-    left: 20px;
-    background-image: url(https://static.wixstatic.com/media/6d257e_f5e3bc2a2df14e77bf667e31b37fdc96~mv2.jpg/v1/fill/w_243,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/pngtree-d-rendering-of-a-race-car-viewed.jpg);
+    margin-left: 20px;
+    background-image: url(https://img.freepik.com/premium-photo/new-modern-stylish-car-illustration_1000714-489.jpg?w=740);
     width: 243px;
     height: 400px;
     color: black;
@@ -333,8 +420,19 @@ html {
     font-family: "Barlow", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 55px;
+    font-size: 40px;
     transition: 0.3s ease;
+    background-position-x: -20px;
+    background-position-y: 30px;
+    background-size: auto 380px;
+}
+
+.block2Frog:hover, .block2f:hover, .block2ino:hover {
+    transform: scale(1.1);
+}
+
+.block2Aluko:hover {
+    transform: scale(1.1);
 }
 
 .block2KPMF:hover {
@@ -817,19 +915,12 @@ html {
     }
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1843px) {
     .block2film {
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
         }
       }
 
-@media screen and (max-width: 1200px) {
-    .block2KPMF, .block2M3, .block2AVERY {
-        right: 0;
-        left: 0;
-        }
-      }
 
 @media screen and (max-width: 1200px) {
     .block3art2{
@@ -885,39 +976,8 @@ html {
         }
       }
 
-@media screen and (max-width: 1200px) {
-    .block2M3, .block2AVERY {
-         margin-top: 30px;
-        }
-      }
 
-@media screen and (max-width: 1200px) {
-    .block2KPMF {
-         background-image: url(https://img.freepik.com/premium-photo/photo-purple-sports-car-white-background_822108-6004.jpg);
-         background-position-x: -20px;
-         background-position-y: -60px;
-        }
-      }
 
-@media screen and (max-width: 1200px) {
-    .block2M3 {
-         background-image: url(https://img.freepik.com/premium-photo/close-up-white-sports-car-white-background-generative-ai_902049-42845.jpg?w=740);
-         background-position-x: -20px;
-         background-position-y: 20px;
-         background-size: auto 500px;
-         width: 243px;
-        }
-      }
-
-      @media screen and (max-width: 1200px) {
-        .block2AVERY {
-             background-image: url(https://img.freepik.com/premium-photo/new-modern-stylish-car-illustration_1000714-489.jpg?w=740);
-             background-position-x: -20px;
-             background-position-y: 100px;
-             background-size: auto 400px;
-             width: 243px;
-            }
-          }
 
           @media screen and (max-width: 1200px) {
             .component {
@@ -961,11 +1021,6 @@ html {
     }
   }
 
-  @media screen and (max-width: 1200px) {
-    .supportlogo{
-        justify-content: flex-start;
-        }
-      }
 
 @media screen and (max-width: 650px) {
     .supportlogo{
@@ -991,11 +1046,114 @@ html {
         }
       }
 
-@media screen and (min-width: 1200px) {
-    .block1logo{
-         margin-left: 15px;
-        }
-      }
+@media screen and (max-width: 1801px) {
+    .block2AVERY{
+        top: 20px;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 811px) {
+    .block2film{
+        width: 530px
+    }
+}
+
+@media screen and (max-width: 1558px) {
+    .block2M3{
+        margin-top: 20px;
+        margin-right: 20px;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 1558px) {
+    .block2KPMF{
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 1295px) {
+    .block2Aluko{
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 1066px) {
+    .block2Aluko{
+        margin-top: 20px;
+        margin-left: 0;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1066px) {
+    .block2film{
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 1315px) {
+    .block2KPMF{
+        margin-top: 20px;
+        margin-left: 0;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 805px) {
+    .block2film{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1066px) {
+    .block2Frog{
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 1066px) {
+    .block2M3{
+        margin-right: 0px;
+    }
+}
+
+
+@media screen and (max-width: 810px) {
+    .block2KPMF{
+        margin-left: 0;
+        margin-right: 20px;
+    }
+}
+
+
+@media screen and (max-width: 805px) {
+    .block2Aluko, .block2M3, .block2AVERY, .block2KPMF, .block2Frog, .block2f, .block2ino {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 526px) {
+    .block2M3, .block2Aluko, .block2AVERY, .block2KPMF, .block2Frog {
+        margin-top: 20px;
+        left: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .block2film{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
 
 @media screen and (max-width: 400px) {
     .SEF{
