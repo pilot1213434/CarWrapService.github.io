@@ -676,19 +676,30 @@
     </div>
 
     <script>
-        // Mobile Menu Toggle
-        const menuButton = document.getElementById('menuButton');
-        const mobileMenu = document.getElementById('selectmenu');
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const mobileMenu = document.querySelector('.mobile-menu');
 
-        menuButton.addEventListener('click', () => {
-            mobileMenu.style.display = 'flex';
-        });
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+    });
 
-        document.querySelectorAll('#selectmenu a').forEach(item => {
-            item.addEventListener('click', () => {
-                mobileMenu.style.display = 'none';
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+            mobileMenu.classList.remove('active');
+        }
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
             });
         });
+    });
 
         // Header scroll effect
         const homePanel = document.getElementById('homePanel');
@@ -714,5 +725,7 @@
             }
         });
     </script>
+
+    
 </body>
 </html>
