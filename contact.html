@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Car Wrap Service</title>
+    <meta name="description" content="Contact Car Wrap Service for custom vehicle wraps and inquiries. Reach us by phone, email, or Instagram.">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        :root {
+            --primary-dark: #1A1A1A;
+            --accent-gray: #757575;
+            --light-bg: #F2F2F2;
+            --text-white: #FFFFFF;
+        }
+
+        body {
+            background: linear-gradient(to right, var(--primary-dark) 5%, var(--accent-gray));
+            margin: 0;
+            font-family: 'Barlow', sans-serif;
+            color: var(--text-white);
+            min-height: 100vh;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .contact-title {
+            font-size: 3.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .contact-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 3px;
+            background: var(--text-white);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .contact-form {
+            background: rgba(242, 242, 242, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: center;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid var(--accent-gray);
+            border-radius: 8px;
+            color: var(--text-white);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        input:focus, textarea:focus {
+            border-color: var(--text-white);
+            outline: none;
+        }
+
+        .submit-btn {
+            background: var(--accent-gray);
+            color: var(--text-white);
+            padding: 15px 40px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background: #5E5E5E;
+        }
+
+        .contact-info {
+            padding: 30px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(242, 242, 242, 0.1);
+            border-radius: 10px;
+        }
+
+        .info-icon {
+            width: 40px;
+            height: 40px;
+            margin-right: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-title {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo-link">
+            <img src="446196728_2194346690932839_1887475797949858010_n.jpg" alt="Logo" class="logo-img">
+            <span class="logo-text">CAR WRAP SERVICE</span>
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="service.html" class="nav-link">Services</a>
+            <a href="portfolio.html" class="nav-link">Portfolio</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn">
+            <img src="menu_icon.svg" alt="Menu" width="30">
+        </button>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="service.html" class="mobile-nav-link">Services</a>
+            <a href="portfolio.html" class="mobile-nav-link">Portfolio</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+        </div>
+    </div>
+</nav>
+
+    <!-- Navigation (same as index.html) -->
+    
+    <div class="contact-container">
+        <div class="contact-header">
+            <h1 class="contact-title">Get in Touch</h1>
+        </div>
+        
+        <div class="contact-grid">
+            <form class="contact-form" action="https://formspree.io/f/mblgjnkr" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" aria-label="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" aria-label="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="5" placeholder="Your Message" aria-label="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <div class="info-item">
+                    <img src="iconmonstr-phone-1.svg" class="info-icon" alt="Phone Icon">
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+1 385 277 75 35</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <img src="iconmonstr-email-3.svg" class="info-icon" alt="Email Icon">
+                    <div>
+                        <h3>Email</h3>
+                        <p>Kostakonkon@icloud.com</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <img src="iconmonstr-instagram-11.svg" class="info-icon" alt="Instagram Icon">
+                    <div>
+                        <h3>Instagram</h3>
+                        <p>@carwrapservice</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (same as index.html) -->
+</body>
+</html>
+
+<script>
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const mobileMenu = document.querySelector('.mobile-menu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+            mobileMenu.classList.remove('active');
+        }
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>

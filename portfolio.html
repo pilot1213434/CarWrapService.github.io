@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Car Wrap Service</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
+  <style>
+    :root {
+      --text-white: #ffffff;
+      --primary-dark: #1a1a1a;
+    }
+
+    body {
+      background: linear-gradient(to right, #111, #333);
+      margin: 0;
+      font-family: 'Barlow', sans-serif;
+      color: var(--text-white);
+    }
+
+    .portfolio-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 80px 20px;
+    }
+
+    .contact-title {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 50px;
+      text-align: center;
+      position: relative;
+      display: inline-block;
+    }
+
+    .contact-title::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60%;
+      height: 3px;
+      background: var(--text-white);
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 20px 0;
+    }
+
+    .portfolio-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      aspect-ratio: 1;
+      transition: transform 0.3s ease;
+    }
+
+    .portfolio-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .portfolio-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .item-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+      padding: 20px;
+      color: var(--text-white);
+      transition: background 0.3s ease;
+    }
+
+    .item-title {
+      margin: 0;
+      font-size: 1.4rem;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.3s ease;
+    }
+
+    .portfolio-item:hover .item-title {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+      .contact-title {
+        font-size: 2.3rem;
+      }
+
+      .item-title {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+     <nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo-link">
+            <img src="446196728_2194346690932839_1887475797949858010_n.jpg" alt="Logo" class="logo-img">
+            <span class="logo-text">CAR WRAP SERVICE</span>
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="service.html" class="nav-link">Services</a>
+            <a href="portfolio.html" class="nav-link">Portfolio</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn">
+            <img src="menu_icon.svg" alt="Menu" width="30">
+        </button>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="service.html" class="mobile-nav-link">Services</a>
+            <a href="portfolio.html" class="mobile-nav-link">Portfolio</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+        </div>
+    </div>
+</nav>
+
+  <!-- Navigation -->
+
+  <div class="portfolio-container">
+    <h1 class="contact-title">Our Works</h1>
+
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="car1.jpg" class="portfolio-image" alt="Tesla Model 3 - Vinyl Black wrap">
+        <div class="item-overlay">
+          <h3 class="item-title">Tesla Model 3 - Vinyl Black</h3>
+        </div>
+      </div>
+
+      <!-- Add more portfolio items below -->
+      <div class="portfolio-item">
+        <img src="car2.jpg" class="portfolio-image" alt="BMW M4 - Gloss Red wrap">
+        <div class="item-overlay">
+          <h3 class="item-title">BMW M4 - Gloss Red</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item">
+        <img src="car3.jpg" class="portfolio-image" alt="Audi RS5 - Chrome Silver wrap">
+        <div class="item-overlay">
+          <h3 class="item-title">Audi RS5 - Chrome Silver</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+</body>
+</html>
+
+<script>
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const mobileMenu = document.querySelector('.mobile-menu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+            mobileMenu.classList.remove('active');
+        }
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
